@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.Calendar;
 
-public class Sortirovka {
+public class SortArrays {
     ArrayList<Calendar> arrCal = new ArrayList<>();
     ArrayList<String> arrComment = new ArrayList<>();
     ArrayList<Calendar> getArrcalend(){

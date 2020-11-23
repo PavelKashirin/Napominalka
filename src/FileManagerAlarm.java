@@ -18,7 +18,7 @@ public class FileManagerAlarm {
             calNow.set(Calendar.SECOND,0);
             calendars.add(calNow);
             arrStrComment.add(str);
-            Sortirovka sort = new Sortirovka();
+            SortArrays sort = new SortArrays();
             sort.sortArrCal(calendars,arrStrComment);
             calendars = sort.getArrcalend();
             arrStrComment = sort.getArrComment();
@@ -76,7 +76,7 @@ public class FileManagerAlarm {
             }
             bufCom.close();
 
-            Sortirovka sort = new Sortirovka();
+            SortArrays sort = new SortArrays();
             sort.sortArrCal(calendars,arrStrComment);//сортировка считанных дат будильника (вместе с комментариями)
             calendars = sort.getArrcalend();
             arrStrComment = sort.getArrComment();
