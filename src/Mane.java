@@ -1,9 +1,10 @@
-import javax.swing.*;
 
 public class Mane {
     public static void main(String[] args) {
-        SwingUtilities.invokeLater(Framer::new);
+        Framer framer = new Framer();
         FileManagerAlarm fm = new FileManagerAlarm();
+        framer.setFm(fm);
+        fm.setFramer(framer);
         fm.FileRead();
     }
 }
